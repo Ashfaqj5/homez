@@ -2,16 +2,18 @@ import React from 'react';
 import logo from '../images/logo.png';
 import Image from 'next/image';
 import Link from 'next/link';
-import footerLogo from '../images/footer-logo.png'
+import footerLogo from '../images/footer-logo.png';
+import apple from '../images/apple.png';
+import googleplay from '../images/gppgleplay.png'
 const Footer = () => {
     
 
 
     return (<div className='flex flex-col bg-[#181A20] text-white'>     
   
-  <Image alt='logo' src={footerLogo} className='w-screen'/>
+  <Image alt='logo' src={footerLogo} className='w-full -ml-20'/>
   
-       <div className='grid md:grid-cols-6  font-normal p-14 md:p-16  text-left gap-7 justify-center'>
+       <div className='grid md:grid-cols-5  font-normal p-14 md:pl-36  text-left gap-7 justify-center'>
             <div className='col-span-1 flex flex-col items-left gap-4'
       
             >
@@ -54,33 +56,22 @@ const Footer = () => {
                 </span>
 
             </div>
-            <div className='col-span-3 flex flex-col gap-3'>
-          
-                <span className='text-xl underline underline-offset-4 pb-5'>Get an Appointment</span>
-                <span className='flex gap-2 items-center border-2 p-2 rounded-md max-w-fit'>
-               
-                     <a href="tel:+918790486090">+91 87904 86090</a> </span>
-                     <span className='flex gap-3 items-center'>
-                  
-                     <span>2nd floor, MN corner, Kokapet, Hyderabad - 500075</span>
-                     </span>
-                <span className='flex gap-3 items-center'>
-                    
-                       
-                        <span>
-                            
-                        Srinivasnagar Colony, 
-Balasamudram, Hanamkonda,
-Telangana - 506001
+            <div className='col-span-2 flex flex-col gap-8'>
+                    <div className='flex gap-5 font-light'>
+                        <span className='flex flex-col'>
+                            <span>Total Free Customer Support</span>
+                            <span className='text-sm font-extralight'>+90123456789</span>
                         </span>
+                        <span className='flex flex-col'>
+                        <span>Live Support?</span>
+                            <span className='text-sm font-extralight'>hi@homez.com</span>
                         </span>
-                        <span className='flex gap-3 items-center '>
-               
-                       
-<span>15-227 Vidyanagar road, Sathupally,Telangana - 507303</span>
-
-                        </span>
-             
+                    </div>
+                    <span>Keep Yourself Up to Date</span>
+                    <div className='flex flex-col gap-5'>
+                        <Image src={apple}/>
+                        <Image src={googleplay}/>
+                    </div>
             </div>
         </div>
      </div>
